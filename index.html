@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+
+          <!--   USER LOGIN FORM   -->
+        <form class="form_1" id="login">
+
+            <h1 class="form_1-title">Login</h1>
+            <div class="form__messege form_message--error" id="form-error"> </div>
+            
+            <div class="form_1-input_group">
+                <input type="text" class="form_1-input" id="username" required placeholder="Enter your username or e-mail">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <div class="form_1-input_group">
+                <input type="password" class="form_1-input" id="password" required placeholder="Enter your password">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <button class="form_1-button" type="submit" onclick="loginUser()">Enter</button>
+
+            <p class="form_1-text"><a href="#" class="form_1-forget_password" id="newPassword">Did you forget your password?</a></p>
+            <p class="form_1-text"><a href="#" class="form_1-new_account" id="signUp">Create New Account</a></p>
+        
+        </form>
+
+        <!--  CREATE NEW ACCOUNT FORM   -->
+        <form class="form_1 form--hidden" id="register">
+            
+            <h1 class="form_1-title">Sign Up</h1>
+            <div class="form__messege form_message--error" id="signUpError"></div> 
+
+            <div class="form_1-input_group">
+                <input type="text" class="form_1-input" id="signUpUsername" required placeholder="Enter your username">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <div class="form_1-input_group">
+                <input type="email" class="form_1-input" id="signUpEmail" required placeholder="Enter your e-mail">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <div class="form_1-input_group">
+                <input type="password" class="form_1-input" id="signUpPassword" required placeholder="Enter new password">
+                <div class="form__input-error-message" id="passwordLength"></div>
+            </div>
+
+            <div class="form_1-input_group">
+                <input type="password" class="form_1-input" id="signUpRePassword" required placeholder="Repeat new password">
+                <div class="form__input-error-message" id="newRePasswordError"></div>
+            </div>
+
+            <button class="form_1-button" type="submit" id="signUpUser">Enter</button>
+
+            <p class="form_1-text"><a href="#" class="form_1-new_account" id="signIn">I already have an account</a></p>
+
+        </form>
+
+            <!--   RORGET PASSWORD / EMAIL FORM   -->
+
+            <form class="form_1 form--hidden"  id="forgot">
+
+                <h1 class="form_1-title">Get New Password</h1>
+                <div class="form__messege form_message--error" id="mailMessage"></div>
+                
+                <div class="form_1-input_group">
+                    <input type="email" class="form_1-input" required placeholder="Enter your username or e-mail">
+                    <div class="form__input-error-message" > </div>
+                </div>
+    
+                <button class="form_1-button" type="submit" id="emailToPassword">Enter</button>
+    
+                <p class="form_1-text"><a href="#" class="form_1-forget_password" id="backToLogin">Go back</a></p>
+                            
+            </form>
+
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>

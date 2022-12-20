@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital@1&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+:root{
+    --dark-red: #460935;
+    --light-red: #8B0C3C;
+    --red: #C10037;
+    --green: green;
+    --white: antiquewhite;
+    --orange: #F75326;
+    --blue: #133769;
+    --border-radius: 5px;
+
+    background: linear-gradient(to right, var(--dark-red),var(--light-red)); 
+    font-size: 18px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+}
+.container{
+    width: 400px;
+    max-height: 600px;
+    padding: 30px;
+    margin: 14px;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*  USER LOGIN FORM   */
+
+.form_1>*:first-child{
+    margin-top: 0px;
+}
+.form_1>*:last-child{
+    margin-bottom: 0px;
+}
+.form_1-title{
+    text-align: center;
+    font-size: 45px;
+    color: var(--blue);
+    margin: 10px;
+}
+.form_message--error{
+    color: var(--red);
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.form__input-error-message{
+    color: var(--red);
+    font-size: 18px;
+}
+.form_1-input_group{
+    margin-bottom: 1rem;
+}
+.form_1-input{
+    font-size: 16px;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--light-red);
+    outline: none;
+    background-color: var(--white);
+    color: var(--blue);
+    transition: all ease 0.3s;
+}
+.form_1-button{
+    width: 100%;
+    padding: 1rem 2rem;   
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--white);
+    background: var(--dark-red);
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all ease-in-out 0.3s;
+}
+.form_1-button:hover{
+    transform: scale(0.97);
+    opacity: 1;
+}
+.form_1-text{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.form_1-forget_password{
+    color: var(--blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+.form_1-forget_password:hover{
+    text-decoration: underline;
+}
+.form_1-new_account{
+    color: var(--blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+.form_1-new_account:hover{
+    text-decoration: underline;
+}
+.form--hidden{
+    display: none;
+}
